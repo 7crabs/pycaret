@@ -3,7 +3,7 @@
 # License: MIT
 
 import os
-from typing import Any, Optional
+from typing import Any, Optional, Union
 
 import matplotlib.pyplot as plt
 
@@ -63,7 +63,7 @@ def show_yellowbrick_plot(
     handle_train: str = "fit",
     handle_test: str = "score",
     scale: float = 1,
-    save: bool = False,
+    save: Union[str, bool] = False,
     fit_kwargs: Optional[dict] = None,
     groups: Optional[Any] = None,
     display_format: Optional[str] = None,
