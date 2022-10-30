@@ -115,7 +115,7 @@ def show_yellowbrick_plot(
         else:
             plot_filename = name
         logger.info(f"Saving '{plot_filename}.png'")
-        plt.savefig(f"{plot_filename}.png", bbox_inches="tight")
+        visualizer.show(outpath=plot_filename, clear_figure=True, bbox_inches="tight")
     else:
         if display_format == "streamlit":
             show_yellowbrick_in_streamlit(visualizer, clear_figure=True)
