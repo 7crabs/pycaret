@@ -63,7 +63,7 @@ def show_yellowbrick_plot(
     handle_train: str = "fit",
     handle_test: str = "score",
     scale: float = 1,
-    save: bool = False,
+    save: Union[str, bool] = False,
     fit_kwargs: Optional[dict] = None,
     groups: Optional[Any] = None,
     display: Optional[Display] = None,
